@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+/**
+ * Tabs
+ */
+.tabs {
+	display: flex;
+	flex-wrap: wrap; // make sure it wraps
+}
+.tabs label {
+	order: 1; // Put the labels first
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/**
+ * Generic Styling
+*/
+body {
+  background: #eee;
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+}
+
+.forms {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<h1>GM5: Application of Genomics to Infectious Disease <img src="https://www.dropbox.com/s/ciw27npgqdxk0g6/pgstudytransparentpng.png?dl=1" width="150" height="150" style="float:right"> <br> 
+</h1> 
+<h3> <span>Everything you need to use for Tuesday 11th January is in this webpage
+</span> </h3>
+
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">Session 1</label>
+  <div class="tab">
+    <h2>Background</h2>
+    <p>Yesterday you were introduced to the application of genomics to infectious disease. Today you will be introduced in greater detail to two applications, in clinical microbiology and in surveiliance using phylogenetics.</p>
+<table style="border-collapse:collapse;border-spacing:0" class="tg"><thead><tr><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Location</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Topic</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Time</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Type</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Speakers</th></tr></thead><tbody><tr><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://ice-cam.zoom.us/j/93589247200" target="_blank" rel="noopener noreferrer">Zoom   chat</a></td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Morning Introduction and Q&amp;A</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">09.00 - 09.15</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Introduction</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Theo Gouliouris   &amp; Mat Beale</td></tr><tr><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Recorded lecture</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Mechanisms of antimicrobial   resistance</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">60 mins</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Online lecture</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Grace Blackwell &amp; Leah Roberts</td></tr><tr><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://ice-cam.zoom.us/j/93589247200" target="_blank" rel="noopener noreferrer">Zoom chat</a></td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Q &amp; A</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">10.30 - 10.45</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Interactive session</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Grace Blackwell &amp; Leah Roberts</td></tr></tbody></table>
+<br>
+<div class="forms">
+<h3>Lecture: Mechanisms of antimicrobial resistance | Dr Grace Blackwell & Dr Leah Roberts</h3>
+<p>In the first pre-recorded session watch this lecture which discusses the main mechanisms of antimicrobial resistance. Then return to Zoom for a Q and A with Dr Blackwell and Dr Roberts.</p>
+<iframe src="https://cambridgelectures.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=5af8a1e4-a59f-4121-83e9-acad01503a08&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+</div>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">Session 2</label>
+  <div class="tab">
+    <h2>A clinical microbiology laboratory</h2>
+    <p>In this section we are going to have a virtual tour of a clinical microbiology laboratory and learn about different applications of genomics in current use.</p>
+<table style="border-collapse:collapse;border-spacing:0" class="tg"><thead><tr><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Location</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Topic</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Time</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Type</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Speakers</th></tr></thead><tbody><tr><td style="background-color:#FCD5B4;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Virtual&nbsp;&nbsp;&nbsp;Tour</td><td style="background-color:#FCD5B4;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Inside a&nbsp;&nbsp;&nbsp;microbiology laboratory</td><td style="background-color:#FCD5B4;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">45 mins</td><td style="background-color:#FCD5B4;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Virtual Tour</td><td style="background-color:#FCD5B4;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Theo Gouliouris</td></tr><tr><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Recorded lecture</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Role of genomics in clinical&nbsp;&nbsp;&nbsp;microbiology</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">45 mins</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Online lecture</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Theo Gouliouris</td></tr><tr><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal"><a href="https://ice-cam.zoom.us/j/93589247200" target="_blank" rel="noopener noreferrer">Zoom chat</a></td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Q &amp; A</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">12.30 - 13.00</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Interactive session</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Theo Gouliouris &amp; Mat Beale</td></tr></tbody></table>
+<br>
+<div class="forms">
+<h3>Virutal tour</h3>
+<p>This tour was recorded by Dr Theo Gouliouris in the microbiology laboratories at Addenbrooke's hospital in Cambridge.</p>
+<iframe src="https://cambridgelectures.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=b914f7eb-e450-4896-b225-acda00c10ac1&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<h3>Lecture: Role of genomics in clinical microbiology | Dr Theo Gouliouris</h3>
+<p>Now we have a lecture from Dr Theo Gouliouris on how the role of genomics has changed applications in clinical microbiology.</p>
+<iframe src="https://cambridgelectures.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=aa8ae79c-a138-4855-8ead-ae1900a61cb2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<p>You may also want to refer to Dr Gouliouris's <a href="https://www.dropbox.com/s/at4hxzrbpenuk63/Theo%20Gouliouris%20-%20Genomics%20in%20clinical%20microbiology_Gouliouris_110122.pdf?dl=0">slides</a> during his presentation</p>
+</div>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">Session 3</label>
+  <div class="tab">
+    <h2>Phylogenetics</h2>
+    <p>One of the enduring tools to look at microbes is the use of phylogenetics. You will see a lot of phylogenies presented in later lectures, so it is important to have a core understanding of this topic.</p>
+<table style="border-collapse:collapse;border-spacing:0" class="tg"><thead><tr><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Location</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Topic</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Time</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Type</th><th style="background-color:#ffffff;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Speakers</th></tr></thead><tbody><tr><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Recorded&nbsp;&nbsp;&nbsp;lecture</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Introduction to&nbsp;&nbsp;&nbsp;Phylogenetics</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">60 mins</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Online lecture</td><td style="background-color:#B7DEE8;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Mat Beale</td></tr><tr><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal"><a href="https://ice-cam.zoom.us/j/93589247200" target="_blank" rel="noopener noreferrer">Zoom chat</a></td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Q &amp; A</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">15.15 - 15.45</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Interactive session</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Theo Gouliouris &amp; Mat Beale</td></tr><tr><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal"><a href="https://ice-cam.zoom.us/j/93589247200" target="_blank" rel="noopener noreferrer">Zoom chat</a></td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Phylogeny Exercise</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">15.45 - 17.00</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Breakout rooms</td><td style="background-color:#D5FC79;border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:bottom;word-break:normal">Mat Beale (+Steph McGimpsey &amp;&nbsp;&nbsp;&nbsp;Sophie Belman)</td></tr></tbody></table>
+<br>
+<div class="forms">
+<h3>Lecture: Introduction to Phylogenetics | Dr Mat Beale</h3>
+<p>In this lecture Dr Mat Beale introduces the core concepts of phylogenies in preperation for the live practical class. Please ensure you have watched this pre-recorded lecture before attending the interactive session.</p>
+<iframe src="https://cambridgelectures.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=6234d2fe-1d77-4404-86ec-ae1600c4b191&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+<h3>File pack for phylogenetic practical class</h3>
+<a href="https://www.dropbox.com/s/tw5iko9erzmax3s/Mat%20Beale%20-%20Phylogenetics_Practical_Exercise_VLE-pack__01-2022.zip?dl=0">Click here to download the zip file</a>
+<p>You may also want to refer to Dr Beale's <a href="https://www.dropbox.com/scl/fi/w4pr2i38s3t0h06xjnkh9/Mat-Beale-Online_Phylo_Practical_exercise_module_2022.pptx?dl=0&rlkey=kmovl9usoru3859trn34m6q9l">slides</a> during his live demonstration</p>
+</div>
+  </div>
+</div>
+
+ <p>Please return to Zoom for the live Q and A and practicals after each pre-recorded session</p>
+</div>
+
+
+
+</body>
+</html>
